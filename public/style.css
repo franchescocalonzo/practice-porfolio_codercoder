@@ -1,0 +1,79 @@
+:root {
+  /* Colors */
+  --clr-primary: hsl(0, 0%, 8%);
+  --clr-secondary: hsl(0, 0%, 14%);
+  --clr-tertiary: #d9d9d9;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-accent: hsl(153, 71%, 59%);
+  --clr-red: hsl(7, 100%, 68%);
+
+  /* Font sizes */
+  --fs-18: 1.125rem;
+  --fs-88: 5.5rem;
+  --fs-72: 4.5rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+
+  /* Container Size */
+
+  --container: 69.375rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* ****CSS reset**** */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* The WCAG criteria states that line-height should be at least 1.5. */
+* {
+  line-height: 1.5;
+
+  /* On larger text, though, this declaration produces tighter lines. */
+  /* line-height: calc(
+    1em + 0.5rem
+  );  */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-size: var(--fs-body);
+}
+
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+}
